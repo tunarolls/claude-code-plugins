@@ -8,7 +8,7 @@
   },
   "lspServers": {
     "omnisharp": {
-      "command": "~/.local/bin/omnisharp/OmniSharp.exe",
+      "command": "OmniSharp",
       "args": ["--languageserver"],
       "extensionToLanguage": {
         ".cs": "csharp"
