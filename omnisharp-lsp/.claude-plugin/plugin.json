@@ -1,0 +1,19 @@
+{
+  "name": "omnisharp-lsp",
+  "description": "C# language server (OmniSharp) for code intelligence",
+  "version": "1.0.0",
+  "author": {
+    "name": "AcctSys",
+    "email": "dev@acctsys.local"
+  },
+  "lspServers": {
+    "omnisharp": {
+      "command": "omnisharp",
+      "args": ["--languageserver"],
+      "extensionToLanguage": {
+        ".cs": "csharp"
+      },
+      "startupTimeout": 120000
+    }
+  }
+}

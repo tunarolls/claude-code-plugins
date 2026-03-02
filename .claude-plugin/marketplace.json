@@ -1,0 +1,32 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "acctsys-plugins",
+  "description": "AcctSys project plugins for Claude Code",
+  "owner": {
+    "name": "AcctSys",
+    "email": "dev@acctsys.local"
+  },
+  "plugins": [
+    {
+      "name": "omnisharp-lsp",
+      "description": "C# language server (OmniSharp) for code intelligence",
+      "version": "1.0.0",
+      "author": {
+        "name": "AcctSys",
+        "email": "dev@acctsys.local"
+      },
+      "source": "./omnisharp-lsp",
+      "category": "development",
+      "lspServers": {
+        "omnisharp": {
+          "command": "omnisharp",
+          "args": ["--languageserver"],
+          "extensionToLanguage": {
+            ".cs": "csharp"
+          },
+          "startupTimeout": 120000
+        }
+      }
+    }
+  ]
+}
